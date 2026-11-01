@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hands Off Emails | Beautiful emails. Without the headache.</title>
+<meta name="description" content="Beautifully designed emails for small businesses. Your first 3 emails are free, and you only pay if you love them.">
+<meta property="og:title" content="Hands Off Emails"><meta property="og:description" content="Beautiful emails. Without the headache."><meta property="og:image" content="images/email-1.jpg">
+<link rel="icon" type="image/png" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#F6F3ED;--paper:#FBF9F5;--bur:#542C38;--rose:#D9B6B5;--taupe:#B7A99C;--ink:#282321}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font:17px/1.7 "DM Sans",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:0 28px}section{padding:110px 0}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;color:var(--bur);line-height:1.04;letter-spacing:-.01em}
+h1{font-size:clamp(52px,7.4vw,96px)}h2{font-size:clamp(38px,5vw,64px)}h3{font-size:28px;line-height:1.15}em{font-style:italic}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bur);font-weight:600;margin-bottom:22px;display:block}
+.mut{color:#6b625b}.center{text-align:center}
+.btn{display:inline-block;background:var(--bur);color:var(--ivory);padding:13px 30px;border-radius:99px;font-size:15px;font-weight:500;border:1px solid var(--bur);transition:.2s}.btn:hover{background:#3f1f29}.btn.line{background:transparent;color:var(--bur)}.btn.line:hover{background:var(--bur);color:var(--ivory)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:84px}.logo{display:block;line-height:0}.logo img{height:48px;width:auto}nav .l{display:flex;gap:32px;align-items:center;font-size:14px}
+.hero{padding:40px 0 90px}.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero p.sub{font-size:19px;margin:26px 0 34px;max-width:440px}.hero .fine{margin-top:18px;font-size:14px;color:#6b625b}
+.cols{display:flex;gap:16px;height:640px;overflow:hidden;-webkit-mask:linear-gradient(transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(transparent,#000 12%,#000 88%,transparent)}
+.col{flex:1}.trk{display:flex;flex-direction:column;gap:16px;animation:up 70s linear infinite}.col.dn .trk{animation-direction:reverse;margin-top:-60px}
+@keyframes up{to{transform:translateY(calc(-50% - 8px))}}
+.em,.screen{position:relative;background:var(--paper);border:1px solid var(--taupe);display:grid;place-items:center;text-align:center;color:#8a7f76;font-size:13px;overflow:hidden}.em{aspect-ratio:3/4;border-radius:6px}.em .mail{position:absolute;top:0;left:0;width:100%}.mail img{display:block;width:100%;height:auto}small{display:block;font-size:10px;opacity:.7}
+.story{background:var(--paper);border-top:1px solid var(--taupe);border-bottom:1px solid var(--taupe)}.story .head{max-width:820px}.story .head h2{margin-bottom:28px}.story .lede{font:italic 400 clamp(24px,2.6vw,32px)/1.4 "Cormorant Garamond",serif;color:var(--bur)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:64px 0;padding:36px 0;border-top:1px solid var(--taupe);border-bottom:1px solid var(--taupe)}.stats b{display:block;font:500 54px/1 "Cormorant Garamond",serif;color:var(--bur)}.stats span{font-size:14px;color:#6b625b}
+.chap{display:grid;grid-template-columns:150px 1fr;gap:32px;padding:34px 0;border-top:1px solid #e3dccf}.chap:first-of-type{border:0}.chap .n{font:italic 400 44px/1 "Cormorant Garamond",serif;color:var(--taupe)}.chap h3{margin-bottom:12px}.chap p{max-width:640px}
+.who{display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:center;margin-top:48px;background:var(--rose);border-radius:20px;padding:36px}.who .ph{aspect-ratio:1;border-radius:14px;background:var(--ivory);border:1px dashed var(--bur);position:relative;display:grid;place-items:center;color:#8a7f76;font-size:13px;text-align:center;overflow:hidden}.who .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}.steps>div{border-top:1px solid var(--taupe);padding-top:22px;position:relative}.steps .n{font:italic 400 40px/1 "Cormorant Garamond",serif;color:var(--taupe)}.steps h3{margin:10px 0}
+.work{background:var(--rose)}.marq{overflow:hidden;padding:56px 0 8px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}.track{display:flex;gap:24px;width:max-content;animation:slide 60s linear infinite}.marq:hover .track,.marq:hover .screen .mail{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(calc(-50% - 12px))}}
+.phone{border:8px solid var(--ink);border-radius:40px;background:var(--ink);position:relative}.phone:before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:70px;height:18px;background:var(--ink);border-radius:99px;z-index:2}.screen{height:500px;border-radius:32px;background:#fff}.screen .mail{position:absolute;top:0;left:0;width:100%;animation:scr 22s ease-in-out infinite alternate}.phone-wrap{flex:0 0 250px;margin:0}.phone-wrap figcaption{text-align:center;font-size:14px;color:var(--bur);margin-top:14px}.phone-wrap:nth-child(3n+2) .mail{animation-delay:-7s}.phone-wrap:nth-child(3n) .mail{animation-delay:-14s}
+@keyframes scr{from{transform:translateY(0)}to{transform:translateY(min(0px,calc(-100% + 500px)))}}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;text-align:left}.card{background:var(--paper);border:1px solid var(--taupe);border-radius:20px;padding:34px}
+.plan{display:flex;flex-direction:column;position:relative}.plan .price{font:500 58px/1 "Cormorant Garamond",serif;color:var(--bur);margin:16px 0 6px}.plan .price small{display:inline;font:400 16px "DM Sans";color:#6b625b}.plan ul{list-style:none;padding:0;margin:22px 0 30px;flex:1}.plan li{padding:5px 0 5px 24px;position:relative;font-size:15px;border-top:1px solid #e9e3d8}.plan li:before{content:"—";position:absolute;left:0;color:var(--bur)}.plan .btn{text-align:center}
+.plan.pop{border:2px solid var(--bur)}.badge{position:absolute;top:-13px;left:34px;background:var(--bur);color:var(--ivory);font:600 11px "DM Sans";letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:99px;font-style:normal}
+.custom{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;text-align:left}
+details{border-bottom:1px solid var(--taupe);padding:22px 0}summary{cursor:pointer;font:500 26px "Cormorant Garamond",serif;color:var(--bur)}details p{margin-top:10px;color:#4a413b}
+.contact{background:var(--bur);color:var(--ivory)}.contact h2,.contact .eyebrow{color:var(--ivory)}.contact p{color:#e8d9d6}
+form{display:grid;gap:14px;max-width:520px;margin:36px auto 0;text-align:left}input,select,textarea{width:100%;padding:14px 18px;border-radius:12px;border:1px solid var(--rose);background:var(--ivory);color:var(--ink);font:inherit}.contact .btn{background:var(--ivory);color:var(--bur);border-color:var(--ivory);cursor:pointer;font-size:16px}
+footer{padding:36px 0;font-size:14px;color:#6b625b;border-top:1px solid var(--taupe)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.proof .head{max-width:760px}.proof .stats{grid-template-columns:repeat(3,1fr);row-gap:40px;margin:56px 0 20px}.proof .note{font-size:13px;color:#6b625b;max-width:640px}
+.reach{margin-top:26px;display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:16px}.reach a{color:var(--ivory);border-bottom:1px solid rgba(246,243,237,.45);padding-bottom:2px}.reach a:hover{border-color:var(--ivory)}
+footer .flogo img{height:36px;width:auto;display:block}footer .wrap{align-items:center}footer .fc{display:flex;gap:20px;flex-wrap:wrap}footer a:hover{color:var(--bur)}
+nav .l a{white-space:nowrap}@media(max-width:1100px){nav .l{gap:20px}}@media(max-width:980px){nav .l a:not(.btn){display:none}}
+/* scroll effects: enabled by script, off for reduced motion */
+.stats b{font-variant-numeric:lining-nums tabular-nums}
+.cols .col{will-change:transform}
+.fx-pin #how.pin{height:250vh;padding:0}
+.fx-pin #how .pin-stage{position:sticky;top:0;height:100vh;display:flex;align-items:center}
+.fx-pin #how .pin-stage>.wrap{width:100%}
+.fx-pin .steps>div{opacity:.25;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.fx-pin .steps>div.on{opacity:1;transform:none}
+.fx-pin .steps>div::before{content:"";position:absolute;left:0;top:-1px;width:100%;height:2px;background:var(--bur);transform:scaleX(var(--p,0));transform-origin:left}
+.fx-pin .steps>div .n{transition:color .5s ease}.fx-pin .steps>div.on .n{color:var(--bur)}
+@media(prefers-reduced-motion:reduce){.trk,.track,.screen .mail{animation:none}}
+@media(max-width:860px){section{padding:72px 0}.hero .wrap,.grid3,.steps,.who,.chap{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.cols{height:440px}nav .l a:not(.btn){display:none}.chap{gap:8px}.phone-wrap{flex-basis:220px}.logo img{height:40px}.proof .stats{grid-template-columns:1fr 1fr}.screen{height:440px}}
+</style></head><body>
+<nav><div class="wrap"><a class="logo" href="#top"><img src="images/logo.png" alt="Hands Off Emails" width="180" height="48"></a><div class="l"><a href="#how">How it works</a><a href="#work">The work</a><a href="#results">Results</a><a href="#story">Our story</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Get Offer</a></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap"><div>
+<h1>Beautiful emails.<br><em>Without the headache.</em></h1>
+<p class="sub">Thoughtfully designed. Strategically executed. Entirely taken care of.</p>
+<a class="btn" href="#contact">Get Offer</a>
+<p class="fine">Your first 3 emails are free. Pay only if you love them.</p></div>
+<div class="cols"><div class="col"><div class="trk"><div class="em"><div class="mail"><img src="images/email-1.jpg" alt="Black Friday email for Healthybud"></div></div><div class="em"><div class="mail"><img src="images/email-2.jpg" alt="Early-access sale email for Healthybud"></div></div><div class="em"><div class="mail"><img src="images/email-3.jpg" alt="Cyber Monday email for Healthybud"></div></div><div class="em"><div class="mail"><img src="images/email-1.jpg" alt="Black Friday email for Healthybud"></div></div><div class="em"><div class="mail"><img src="images/email-2.jpg" alt="Early-access sale email for Healthybud"></div></div><div class="em"><div class="mail"><img src="images/email-3.jpg" alt="Cyber Monday email for Healthybud"></div></div></div></div><div class="col dn"><div class="trk"><div class="em"><div class="mail"><img src="images/email-4.jpg" alt="Shop small, shop Canadian email for Healthybud"></div></div><div class="em"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/f354d82a-9e3c-43d9-8c83-48db14e37e02.png" alt="Welcome to better bowls"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/cc06c7ba-4677-4955-af17-306d30b961b7.png" alt="You picked the best bowl"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/e04c9610-d8ae-4521-9788-28fd847994ab.png" alt="What makes it better"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/031e92e7-515e-42a1-92a6-96fb4fe0926f.png" alt="3 easy ways to serve"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/d0e0832c-6cc9-4afb-98fe-440817a1dc75.png" alt="Coming up next"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/3a126375-726f-4895-bf4e-150a94041fc8.png" alt="With love, the Healthybud team"></div></div><div class="em"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/729ca32e-9994-4fa0-b770-9d321a56945e.png" alt="Subscriber offer: 35% off Meal Bites"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/5563cc81-706c-47b4-90eb-5b79d57f2af4.png" alt="Add Meal Bites to your next box"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/71f92689-03b2-4bf1-a1c7-4ee4114d5515.png" alt="Easy as 1-2-3"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/36264ef2-5362-4ece-85cf-6663cdd5830e.png" alt="Reviews"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/217fe325-35d7-4246-9ac7-e71a715e0038.png" alt="Picky eater guarantee"></div></div><div class="em"><div class="mail"><img src="images/email-4.jpg" alt="Shop small, shop Canadian email for Healthybud"></div></div><div class="em"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/f354d82a-9e3c-43d9-8c83-48db14e37e02.png" alt="Welcome to better bowls"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/cc06c7ba-4677-4955-af17-306d30b961b7.png" alt="You picked the best bowl"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/e04c9610-d8ae-4521-9788-28fd847994ab.png" alt="What makes it better"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/031e92e7-515e-42a1-92a6-96fb4fe0926f.png" alt="3 easy ways to serve"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/d0e0832c-6cc9-4afb-98fe-440817a1dc75.png" alt="Coming up next"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/3a126375-726f-4895-bf4e-150a94041fc8.png" alt="With love, the Healthybud team"></div></div><div class="em"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/729ca32e-9994-4fa0-b770-9d321a56945e.png" alt="Subscriber offer: 35% off Meal Bites"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/5563cc81-706c-47b4-90eb-5b79d57f2af4.png" alt="Add Meal Bites to your next box"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/71f92689-03b2-4bf1-a1c7-4ee4114d5515.png" alt="Easy as 1-2-3"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/36264ef2-5362-4ece-85cf-6663cdd5830e.png" alt="Reviews"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/217fe325-35d7-4246-9ac7-e71a715e0038.png" alt="Picky eater guarantee"></div></div></div></div></div></div></header>
+
+<section id="how" class="pin"><div class="pin-stage"><div class="wrap center"><span class="eyebrow">How it works</span><h2>Three quiet steps, <em>zero stress</em></h2>
+<div class="steps" style="text-align:left"><div><div class="n">01</div><h3>Share your brand</h3><p>Send your logo, colours and goals. It takes about ten minutes.</p></div><div><div class="n">02</div><h3>Receive 3 free emails</h3><p>On-brand, mobile-ready and ready to send, with no payment needed.</p></div><div><div class="n">03</div><h3>Pay only if you love them</h3><p>Choose a monthly plan if you’re delighted. If not, walk away with no hard feelings.</p></div></div></div></div></section>
+
+<section class="work" id="work"><div class="wrap center"><span class="eyebrow">The work</span><h2>Emails people <em>want to open</em></h2></div>
+<div class="marq"><div class="track"><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-1.jpg" alt="Black Friday email for Healthybud" loading="lazy"></div></div></div><figcaption>Black Friday campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-2.jpg" alt="Early-access sale email for Healthybud" loading="lazy"></div></div></div><figcaption>Early-access campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-3.jpg" alt="Cyber Monday email for Healthybud" loading="lazy"></div></div></div><figcaption>Cyber Monday campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-4.jpg" alt="Shop small, shop Canadian email for Healthybud" loading="lazy"></div></div></div><figcaption>Shop small campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/f354d82a-9e3c-43d9-8c83-48db14e37e02.png" alt="Welcome to better bowls" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/cc06c7ba-4677-4955-af17-306d30b961b7.png" alt="You picked the best bowl" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/e04c9610-d8ae-4521-9788-28fd847994ab.png" alt="What makes it better" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/031e92e7-515e-42a1-92a6-96fb4fe0926f.png" alt="3 easy ways to serve" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/d0e0832c-6cc9-4afb-98fe-440817a1dc75.png" alt="Coming up next" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/3a126375-726f-4895-bf4e-150a94041fc8.png" alt="With love, the Healthybud team" loading="lazy"></div></div></div><figcaption>Subscriber welcome flow</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/729ca32e-9994-4fa0-b770-9d321a56945e.png" alt="Subscriber offer: 35% off Meal Bites" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/5563cc81-706c-47b4-90eb-5b79d57f2af4.png" alt="Add Meal Bites to your next box" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/71f92689-03b2-4bf1-a1c7-4ee4114d5515.png" alt="Easy as 1-2-3" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/36264ef2-5362-4ece-85cf-6663cdd5830e.png" alt="Reviews" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/217fe325-35d7-4246-9ac7-e71a715e0038.png" alt="Picky eater guarantee" loading="lazy"></div></div></div><figcaption>Subscriber offer flow</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-1.jpg" alt="Black Friday email for Healthybud" loading="lazy"></div></div></div><figcaption>Black Friday campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-2.jpg" alt="Early-access sale email for Healthybud" loading="lazy"></div></div></div><figcaption>Early-access campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-3.jpg" alt="Cyber Monday email for Healthybud" loading="lazy"></div></div></div><figcaption>Cyber Monday campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="images/email-4.jpg" alt="Shop small, shop Canadian email for Healthybud" loading="lazy"></div></div></div><figcaption>Shop small campaign</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/f354d82a-9e3c-43d9-8c83-48db14e37e02.png" alt="Welcome to better bowls" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/cc06c7ba-4677-4955-af17-306d30b961b7.png" alt="You picked the best bowl" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/e04c9610-d8ae-4521-9788-28fd847994ab.png" alt="What makes it better" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/031e92e7-515e-42a1-92a6-96fb4fe0926f.png" alt="3 easy ways to serve" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/d0e0832c-6cc9-4afb-98fe-440817a1dc75.png" alt="Coming up next" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/3a126375-726f-4895-bf4e-150a94041fc8.png" alt="With love, the Healthybud team" loading="lazy"></div></div></div><figcaption>Subscriber welcome flow</figcaption></figure><figure class="phone-wrap"><div class="phone"><div class="screen"><div class="mail"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/729ca32e-9994-4fa0-b770-9d321a56945e.png" alt="Subscriber offer: 35% off Meal Bites" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/5563cc81-706c-47b4-90eb-5b79d57f2af4.png" alt="Add Meal Bites to your next box" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/71f92689-03b2-4bf1-a1c7-4ee4114d5515.png" alt="Easy as 1-2-3" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/36264ef2-5362-4ece-85cf-6663cdd5830e.png" alt="Reviews" loading="lazy"><img src="https://cdn.klaviyomail.com/company/JT9Hc8/images/217fe325-35d7-4246-9ac7-e71a715e0038.png" alt="Picky eater guarantee" loading="lazy"></div></div></div><figcaption>Subscriber offer flow</figcaption></figure></div></div></section>
+
+<section class="proof" id="results"><div class="wrap">
+<div class="head"><span class="eyebrow">The results</span><h2>Built for Healthybud. <em>Proven in the inbox.</em></h2>
+<p class="mut" style="margin-top:22px;font-size:19px">Before offering it to anyone else, Dana ran her own brand’s email on this system. Here’s what the last twelve months look like.</p></div>
+<div class="stats"><div><b>1M+</b><span>emails sent in the last 12 months</span></div><div><b>CA$270K+</b><span>in revenue from campaigns and automated flows</span></div><div><b>2,150+</b><span>orders placed straight from an email</span></div><div><b>~60%</b><span>of Healthybud’s online store revenue comes from email</span></div><div><b>218</b><span>campaigns sent in a year, alongside 42 automated flows</span></div><div><b>CA$1.34</b><span>revenue per recipient on her best send, about 3× a typical sale email</span></div></div>
+</div></section>
+
+<section class="story" id="story"><div class="wrap">
+<div class="head"><span class="eyebrow">Our story</span><h2>Good email help shouldn’t be this <em>hard to find.</em></h2>
+<p class="lede">Hands Off Emails began with a founder who was tired of paying agency prices for work that never quite arrived.</p></div>
+<div class="stats"><div><b>$5,000+</b><span>USD per month, what agencies quoted</span></div><div><b>+ rev share</b><span>asked by some, on top of fees</span></div><div><b>0</b><span>days of notice from the contractor who quit</span></div><div><b>3</b><span>emails free, so you can judge for yourself</span></div></div>
+<div class="chap"><div class="n">i.</div><div><h3>The search</h3><p>Dana Ben David, co-founder of Healthybud, needed beautiful emails that actually sold product. What she found were agencies and contractors who weren’t up to speed, and when she did find talent, the quotes started at $5,000 USD a month. Some wanted a share of revenue on top.</p></div></div>
+<div class="chap"><div class="n">ii.</div><div><h3>The breaking point</h3><p>Then a contractor quit without notice, days before a deadline that mattered more than any other. She was left stranded, with emails to deliver and nobody to deliver them. That was the moment she decided she would never depend on someone else’s availability again.</p></div></div>
+<div class="chap"><div class="n">iii.</div><div><h3>The system</h3><p>Determined to find a better way, she built one. By combining AI with Figma and Canva, she created a process that produces emails that look stunning and convert, reliably and quickly, with a human eye on every detail.</p></div></div>
+<div class="chap"><div class="n">iv.</div><div><h3>Now, for you</h3><p>She now offers that same system to small businesses at a fraction of what they’d normally pay. No retainers that cost a fortune, no revenue share, no disappearing act. Start with three emails on us, and keep going only if you love them.</p></div></div>
+<div class="who"><div class="ph"><img src="images/dana.jpg" alt="Dana Ben David" onerror="this.remove()"><span>Founder photo<small>images/dana.jpg</small></span></div><div><span class="eyebrow">Founder</span><h3 style="font-size:36px">Dana Ben David</h3><p style="margin-top:10px">Co-founder and CMO of Healthybud, and creator of the Hands Off Emails system. Every email on this page went out to real Healthybud customers or is lined up for this holiday season.</p></div></div></div></section>
+
+
+
+<section id="pricing"><div class="wrap center"><span class="eyebrow">Pricing</span><h2>Simple monthly <em>plans</em></h2><p class="mut" style="margin-top:16px">One credit equals one designed email. Every plan begins with 3 free emails.</p>
+<div class="grid3"><div class="card plan"><h3>Starter</h3><p class="price">$750<small>/mo</small></p><p class="mut">5 emails per month · $150 per email</p><ul><li>Designed with AI, Figma and Canva</li><li>On-brand and mobile-ready</li><li>Delivered ready for your email platform</li><li>Month to month, cancel anytime</li></ul><a class="btn line" href="#contact">Get Offer</a></div><div class="card plan pop"><em class=badge>Most popular</em><h3>Growth</h3><p class="price">$1,350<small>/mo</small></p><p class="mut">10 emails per month · $135 per email</p><ul><li>Designed with AI, Figma and Canva</li><li>On-brand and mobile-ready</li><li>Delivered ready for your email platform</li><li>Month to month, cancel anytime</li></ul><a class="btn " href="#contact">Get Offer</a></div><div class="card plan"><h3>Scale</h3><p class="price">$2,500<small>/mo</small></p><p class="mut">20 emails per month · $125 per email</p><ul><li>Designed with AI, Figma and Canva</li><li>On-brand and mobile-ready</li><li>Delivered ready for your email platform</li><li>Month to month, cancel anytime</li></ul><a class="btn line" href="#contact">Get Offer</a></div></div>
+<div class="card custom"><div><h3>Need more volume?</h3><p class="mut">Volume, workflow and billing tailored to your team. Extra emails outside your plan are $150 each.</p></div><a class="btn line" href="#contact">Get in touch</a></div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap" style="max-width:780px"><h2 class="center" style="margin-bottom:40px">Questions, <em>answered</em></h2>
+<details><summary>Is the free trial really free?</summary><p>Yes. We design 3 emails for you at no cost, and you only pay if you like them.</p></details>
+<details><summary>Do you send the emails for me?</summary><p>We deliver finished, send-ready designs for your email platform. Tell us about your setup and we’ll confirm what works best.</p></details>
+<details><summary>Which email platforms do you work with?</summary><p>Tell us what you use, such as Klaviyo, Mailchimp or Shopify Email, and we’ll fit your workflow.</p></details>
+<details><summary>Can I change or cancel my plan?</summary><p>Plans are month to month. Upgrade, downgrade or cancel whenever you need.</p></details>
+<details><summary>Do you take a share of revenue?</summary><p>Never. You pay a flat monthly fee, nothing more.</p></details></div></section>
+
+<section class="contact" id="contact"><div class="wrap center"><span class="eyebrow">Get Offer</span><h2>Let’s make your <em>first three</em></h2><p style="margin-top:14px">Tell us a little about your business, or simply say hello.</p>
+<div class="reach"><a href="mailto:dana@handsoffemails.com">dana@handsoffemails.com</a><a href="tel:+16452404510">(645) 240-4510</a></div>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"><input name="name" placeholder="Your name" required><input type="email" name="email" placeholder="Email" required><input name="website" placeholder="Website (optional)"><select name="interest"><option>Try 3 free emails</option><option>Starter (5 emails)</option><option>Growth (10 emails)</option><option>Scale (20 emails)</option><option>Custom volume</option><option>Just getting in touch</option></select><textarea name="message" rows="4" placeholder="Anything we should know?"></textarea><button class="btn" type="submit">Send</button></form></div></section>
+<footer><div class="wrap"><a class="flogo" href="#top"><img src="images/logo.png" alt="Hands Off Emails" width="135" height="36"></a><span class="fc"><a href="mailto:dana@handsoffemails.com">dana@handsoffemails.com</a><a href="tel:+16452404510">(645) 240-4510</a></span><span>© 2026 Hands Off Emails · <a href="#">Privacy Policy</a> · <a href="#">Terms</a></span></div></footer>
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if(reduce.matches) return;
+  var root=document.documentElement, wide=window.matchMedia('(min-width: 861px)');
+
+  /* How it works: pin the section and reveal the steps as you scroll */
+  var how=document.getElementById('how'), steps=how?how.querySelectorAll('.steps>div'):[];
+  function setPin(){ root.classList.toggle('fx-pin', wide.matches); onScroll(); }
+  function updateSteps(){
+    if(!root.classList.contains('fx-pin')){ steps.forEach(function(el){el.classList.add('on');el.style.removeProperty('--p');}); return; }
+    var r=how.getBoundingClientRect(), span=how.offsetHeight-window.innerHeight;
+    var prog=Math.min(Math.max(-r.top/(span*0.85),0),1)*steps.length;
+    steps.forEach(function(el,i){
+      var p=Math.min(Math.max(prog-i,0),1);
+      el.style.setProperty('--p',p.toFixed(3));
+      el.classList.toggle('on', i===0 || p>0.05);
+    });
+  }
+
+  /* Hero: the two email columns drift at different speeds */
+  var hero=document.querySelector('.hero'), cols=document.querySelectorAll('.cols .col');
+  function updateHero(){
+    var y=window.scrollY; if(y>hero.offsetTop+hero.offsetHeight) return;
+    if(cols[0]) cols[0].style.transform='translateY('+(-y*0.14).toFixed(1)+'px)';
+    if(cols[1]) cols[1].style.transform='translateY('+(-y*0.05).toFixed(1)+'px)';
+  }
+
+  var ticking=false;
+  function onScroll(){ if(ticking) return; ticking=true; requestAnimationFrame(function(){ updateSteps(); updateHero(); ticking=false; }); }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  if(wide.addEventListener) wide.addEventListener('change',setPin); else wide.addListener(setPin);
+  setPin();
+
+  /* Results: count the numbers up once when they come into view */
+  var nums=document.querySelectorAll('.proof .stats b');
+  if(!('IntersectionObserver' in window) || !nums.length) return;
+  function parse(t){
+    var m=t.match(/^(\D*?)([\d,]*\.?\d+)(.*)$/); if(!m) return null;
+    var raw=m[2], dec=(raw.split('.')[1]||'').length, val=parseFloat(raw.replace(/,/g,''));
+    return {pre:m[1], val:val, dec:(dec===0&&val<10)?1:dec, commas:raw.indexOf(',')>-1, suf:m[3], final:t};
+  }
+  function fmt(d,v){
+    var s=v.toFixed(d.dec); if(d.commas){ var p=s.split('.'); p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,','); s=p.join('.'); }
+    return d.pre+s+d.suf;
+  }
+  var items=[].map.call(nums,function(el){ var d=parse(el.textContent.trim()); if(d){ d.el=el; el.textContent=fmt(d,0); } return d; }).filter(Boolean);
+  var io=new IntersectionObserver(function(entries){
+    if(!entries.some(function(e){return e.isIntersecting;})) return;
+    io.disconnect();
+    var start=null, dur=1600;
+    function frame(t){
+      if(start===null) start=t;
+      var k=Math.min((t-start)/dur,1), e=1-Math.pow(1-k,3);
+      items.forEach(function(d){ d.el.textContent = k<1 ? fmt(d,d.val*e) : d.final; });
+      if(k<1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  },{threshold:0.4});
+  io.observe(document.querySelector('.proof .stats'));
+})();
+</script>
+</body></html>
