@@ -75,6 +75,9 @@ h1 em,h2 em,h3 em{color:var(--acc)}.eyebrow{color:var(--acc)}
 .contact{background:var(--ink)}.contact .eyebrow,.contact h2 em{color:var(--acc-soft)}.contact h2{color:var(--ivory)}.contact p{color:#d9d6de}.contact .btn{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}.contact .btn:hover{background:#fff}
 .err{color:var(--acc-soft)}
 .contact .thanks p{color:var(--ink)}
+/* curved work carousel */
+.marq{padding:64px 0 110px}.phone-wrap{will-change:transform;transform-origin:50% 55%}
+@media(max-width:860px),(pointer:coarse),(prefers-reduced-motion:reduce){.marq{padding:48px 0 84px}}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="#top"><img data-img="i2" alt="Hands Off Emails" width="180" height="48"></a><div class="l"><a href="#how">How it works</a><a href="#work">The work</a><a href="#results">Results</a><a href="#story">Our story</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Get Offer</a></div></div></nav>
 
@@ -204,5 +207,16 @@ f.addEventListener('submit',function(ev){ev.preventDefault();var b=f.querySelect
 fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}}).then(function(r){
 if(!r.ok)throw 0;f.hidden=true;t.hidden=false;t.scrollIntoView({behavior:'smooth',block:'center'});
 }).catch(function(){er.hidden=false;b.disabled=false;b.textContent=old;});});
+})();</script>
+<script>(function(){
+var m=document.querySelector('.marq');if(!m)return;
+var items=[].slice.call(m.querySelectorAll('.phone-wrap')),on=false;
+function tick(){
+ var vw=window.innerWidth,c=vw/2,narrow=vw<860,rot=narrow?7:9,drop=narrow?30:46;
+ for(var i=0;i<items.length;i++){var el=items[i];if(el.offsetParent===null)continue;
+  var r=el.getBoundingClientRect(),d=((r.left+r.width/2)-c)/(vw*.5);d=Math.max(-1.5,Math.min(1.5,d));
+  el.style.transform='translateY('+(d*d*drop).toFixed(1)+'px) rotate('+(d*rot).toFixed(2)+'deg)';}
+ if(on)requestAnimationFrame(tick);}
+if('IntersectionObserver' in window){new IntersectionObserver(function(e){var v=e[0].isIntersecting;if(v&&!on){on=true;tick();}else if(!v){on=false;}}).observe(m);}else{on=true;tick();}
 })();</script>
 </body></html>
